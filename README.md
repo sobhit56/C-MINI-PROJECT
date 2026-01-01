@@ -31,41 +31,6 @@ Seconds using modulus % 60
 
 The final output is displayed in HH:MM:SS format with leading zeros.
 
-📥 Input
-
-An integer representing the total number of seconds
-
-Example Input:
-
-3661
-
-📤 Output
-
-Time displayed in hours : minutes : seconds
-
-Example Output:
-
-Formatted time: 01:01:01
-
-💻 Source Code
-#include <stdio.h>
-
-int main() {
-    int total_seconds;
-
-    printf("Enter the total number of seconds: ");
-    scanf("%d", &total_seconds);
-
-    int hours = total_seconds / 3600;
-    int remaining_seconds = total_seconds % 3600;
-    int minutes = remaining_seconds / 60;
-    int seconds = remaining_seconds % 60;
-
-    printf("Formatted time: %02d:%02d:%02d\n", hours, minutes, seconds);
-
-    return 0;
-}
-
 ▶️ How to Compile and Run
 
 Open terminal or command prompt
